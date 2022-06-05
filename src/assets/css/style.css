@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+.int__inside .__btn {
+  border: 3px solid #DDD92A;
+  border-radius: 4px;
+  padding: 10px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+  cursor: pointer;
+  background: none;
+  -webkit-box-shadow: inset 0 0 0 0 #DDD92A;
+          box-shadow: inset 0 0 0 0 #DDD92A;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  margin: 0.5rem 0;
+}
+
+.int__inside .__btn:hover {
+  color: black;
+  -webkit-box-shadow: inset 10rem 0 0 0 #DDD92A;
+          box-shadow: inset 10rem 0 0 0 #DDD92A;
+  cursor: pointer;
+}
+
+#light-mode {
+  background: #FFFAFF;
+}
+
+#light-mode span {
+  color: #DDD92A;
+}
+
+#light-mode * {
+  color: #2D2A32;
+}
+
+#light-mode a:hover {
+  color: #DDD92A;
+}
+
+#dark-mode {
+  background-color: #364156;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #22272e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e67a00;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8f4f06;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #F9FFFD;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  display: block;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: #364156;
+}
+
+.text__appealing {
+  color: #DDD92A;
+  display: unset;
+}
+
+.int__ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 30rem;
+  height: 100%;
+  padding: 1rem;
+  background: #2D2A32;
+}
+
+.int__inside {
+  display: -ms-grid;
+  display: grid;
+  place-items: start;
+  padding: 1rem;
+}
+
+.int__inside .__determine {
+  color: #EAE151;
+}
+
+.int__inside > * {
+  margin-bottom: 0.8rem;
+}
+
+.int__socials {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.int__socials .__icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.int__socials .__icons :hover {
+  color: #DDD92A;
+}
+
+.eve {
+  padding: 0 1rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.eve .text__appealing {
+  color: #A1FF85;
+  display: unset;
+}
+
+.moveSide {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header a {
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+header a:hover {
+  color: #A1FF85;
+}
+
+header .header__menu {
+  display: none;
+}
+
+header button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+}
+
+header button:active {
+  border: 2px solid #A1FF85;
+}
+
+header button:hover {
+  color: #A1FF85;
+}
+
+.ab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.__abc {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.__abc h1 {
+  margin-bottom: 2rem;
+}
+
+.__abc .__stack {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.__abc .__stack h3 {
+  text-align: start !important;
+}
+
+.__abc .__stack .__item {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: end;
+  padding: 1rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.2rem;
+}
+
+.__abc .__stack .item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 10rem;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.__abc .__stack .item__container .__icon {
+  fill: #A1FF85;
+}
+
+.pjx {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.pjx h1 {
+  margin-bottom: 2rem;
+}
+
+.proyek__ct {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.proyek__ins {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  width: 80%;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.crd__ctx {
+  padding: 0.8rem;
+  border-radius: 5px;
+  background: #3d485e;
+}
+
+.crd__ctx h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #A1FF85;
+}
+
+.crd__ctx p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.crd__ctx .img__ctx {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.crd__ctx .img__ctx img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.crd__ctx .__tags span {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  padding: 2px;
+  color: #A1FF85;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

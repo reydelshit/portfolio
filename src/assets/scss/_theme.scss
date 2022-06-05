@@ -1,0 +1,20 @@
+#light-mode{
+    background: $main-light-background;
+
+    span{
+        color: $primary-color;
+    }
+    
+    *{
+        color: $main-light-color;
+    }
+
+    a:hover{
+       color: $primary-color;
+    }
+}
+
+#dark-mode{
+    background-color: $main-dark-background;
+
+}

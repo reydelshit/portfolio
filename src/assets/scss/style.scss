@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+// utils 
+@import './colors/colors';
+@import 'fonts';
+
+
+@import 'button';
+@import 'global';
+@import 'theme';
+@import 'scrollbar';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $default-color;
+    font-family: $main-font;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+span{
+    display: block;
+}
+
+
+.main{
+    display: flex;
+    // align-items: center;
+    height: 100vh;
+    background: $main-dark-background;
+}
+
+.text__appealing{
+    color: $primary-color;
+    display: unset;
+}
+
+.int__{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30rem;
+    height: 100%;
+    padding: 1rem;
+    background: #2D2A32;
+
+    // border: 1px solid orange;
+
+    &inside{
+        display: grid;
+        place-items: start;
+        padding: 1rem ;
+        // border: 1px solid pink;
+
+        .__determine{
+            color: $secondary-color;
+        }
+        .__btn{
+            @extend %btn;
+        }
+    }
+
+    &inside > *{
+        margin-bottom: 0.8rem;
+    }
+
+    &socials{
+
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+
+        // border: 1px solid orange;
+    
+        .__icons{
+            font-size: 1.5rem;
+            cursor: pointer;
+
+            :hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@import 'everything';
