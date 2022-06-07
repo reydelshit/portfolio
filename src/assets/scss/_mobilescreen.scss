@@ -1,0 +1,60 @@
+@media screen and (max-width: 1292px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .int__{
+        width: 100%;
+    }
+    .in__{
+        width: 100%;
+        position: unset;
+    }
+
+    header {
+
+        .hd__links{
+            display: none;
+        }
+
+        .sw__links{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header__menu{
+            display: block;
+            // font-size: 2rem;
+        }
+    }
+
+    .eve{
+        padding: 0;
+
+    }
+
+    .ev{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+
+    .ab{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .__abc{
+        .__stack{
+            .__item{
+                place-items: center;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+    
+            .item__container{
+                width: fit-content;
+            }
+        }
+    }
+    
+}

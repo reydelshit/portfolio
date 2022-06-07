@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { GithubImage } from '../assets/Images/Images'
+import { GithubImage } from '../../assets/Images/Images'
 import { 
     SiReact,
     SiVuedotjs,
@@ -55,9 +55,11 @@ export const Projects = [
 ]
 
 export const Links = [
-    ['About', '/about'],
-    ['Projects', '/projects'],
-    ['Contact', '/contact'],
+    ['About', '/#about'],
+    ['Projects', '/#projects'],
+    ['Blogs', '/#blogs'],
+    ['Contact', '/#contact'],
+
 ]
 
 

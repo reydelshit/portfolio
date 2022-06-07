@@ -1,0 +1,26 @@
+
+.hd__default{
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: end;
+}
+
+.hd__side{
+
+    width: 8rem;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 4rem 1rem;
+    
+    a{
+        margin-bottom: 1rem;
+    }
+
+    .hd__links{
+        display: flex;
+        flex-direction: column;
+    }
+}

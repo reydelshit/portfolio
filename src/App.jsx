@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, createContext } from 'react'
-import '../src/assets/css/style.css'
+import './index.css'
 
 import Introduction from './components/Introduction'
 import Everything from './components/Everything'

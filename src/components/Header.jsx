@@ -5,63 +5,94 @@ import { BsSun, BsSunFill } from 'react-icons/bs'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { RiCloseFill } from 'react-icons/ri'
 
-import { Links } from '../Details/ProfileDetails'
+import { Links } from './Details/ProfileDetails'
 
 
 const Header = ({toggleTheme}) => {
 
-    const [darkMode, setDarkMode] = useState(false)
-    const [menu, setMenu] = useState(false)
-    const [menuOpen, setMenuOpen] = useState(false)
+    // const [darkMode, setDarkMode] = useState(false)
+    // const [menu, setMenu] = useState(false)
+    // const [menuOpen, setMenuOpen] = useState(false)
 
-    // useEffect(() => {
+    const [moveSide, setMoveSide] = useState(false)
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+    });
 
-    //   const wew = document.querySelector('.eve')
-      
-    //   wew.addEventListener('scroll', handleScroll)
-    // }, [])
+    const [toggle, setToggle] = useState({
+      menuDecider: false,
+      themeDecider: false,
+      closeDecider: false,
+    })
 
-    // const [moveSide, setMoveSide] = useState(false)
-
-
-
-    // const handleScroll = () => {
-    //     if (window.scrollY > 200) {
-    //       console.log('yes')
-    //       setMoveSide(true)
-    //     } else {
-    //       console.log('no')
-    //       setMoveSide(false)
-
-    //     }
-    // }
     
-    const toggleMenu = () => {
-      menu ? setMenu(false) : setMenu(true)
-      setMenuOpen(!menuOpen)
-    }
-  
-    const toggleDarkMode = () => {
-      setDarkMode(!darkMode)
+    useEffect(() => {
+
+      const handleResize = () => {
+        setWindowSize({
+          width: window.innerWidth,
+        });
+      }
+
+      const handleScroll = () => {
+          window.scrollY > 50 ? setMoveSide(true) : setMoveSide(false)
+      }
+
+      window.addEventListener("resize", handleResize);
+
+      if(window.innerWidth > 1299) {
+        window.addEventListener('scroll', handleScroll)
+      }
+
+      if(window.innerWidth < 1300) {
+        setMoveSide(false)
+      }
+
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        window.removeEventListener('scroll', handleScroll);
+      };
+
+
+    }, [windowSize]); 
+
+
+    const toggleThemeIcon = () => {
+      setToggle({
+        themeDecider: toggle.themeDecider ? false : true,
+      })
       toggleTheme()
+      // console.log(toggle.themeDecider)
     }
-  
-    const closeMenu = () => {
-      setMenu(false)
-      setMenuOpen(false)
+    const toggleMenu = () => {
+      setToggle({
+        menuDecider: toggle.menuDecider ? false : true,
+      })
+      // console.log(toggle.menuDecider)
+    }
+
+    const closeMenuAfterClicked = () => {
+      setToggle({
+        closeDecider: toggle.closeDecider ? false : true,
+      })
+      // console.log(toggle.closeDecider)
     }
 
 
   return (
-    <header>
-        {Links.map(([title, link], index) => 
-        <a key={index} href={link} onClick={closeMenu}>{title}</a>
-        )}
-            <button className='toggleDarkMode' onClick={toggleDarkMode}>
-                {darkMode ? <BsSunFill /> : <BsSun />}
+    
+    <header className={moveSide ? 'hd__side' : 'hd__default'}>
+          <div className={toggle.menuDecider ? 'sw__links' : 'hd__links'}>
+            {Links.map(([title, link], index) => 
+              <a key={index} href={link} onClick={closeMenuAfterClicked}>{title}</a>
+              )}
+          </div>
+            <button className='toggleDarkMode' onClick={toggleThemeIcon}>
+                {toggle.themeDecider ? <BsSunFill /> : <BsSun />}
             </button>
             <button onClick={toggleMenu} className='header__menu'>
-              {menuOpen ? <RiCloseFill /> : <BiMenuAltRight/>}
+              {toggle.menuDecider ? <RiCloseFill /> : <BiMenuAltRight/>}
           </button>
     </header>
   )

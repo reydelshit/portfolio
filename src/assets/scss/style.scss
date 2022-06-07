@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 
-// utils 
 @import './colors/colors';
 @import 'fonts';
 
@@ -10,7 +9,7 @@
 @import 'global';
 @import 'theme';
 @import 'scrollbar';
-
+@import 'movesideHeader';
 
 
 *{
@@ -32,8 +31,8 @@ span{
 
 .main{
     display: flex;
-    // align-items: center;
-    height: 100vh;
+    height: 100%;
+    justify-content: space-between;
     background: $main-dark-background;
 }
 
@@ -42,21 +41,45 @@ span{
     display: unset;
 }
 
+
 .int__{
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 100vh;
+    width: 40rem;
+    
+    border: 1px solid yellow;
+
+
+}
+
+.in__{
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 30rem;
-    height: 100%;
+    align-items: center;
+    width: 28rem;
     padding: 1rem;
     background: #2D2A32;
 
     // border: 1px solid orange;
 
     &inside{
+        width: 100%;
         display: grid;
         place-items: start;
         padding: 1rem ;
+
         // border: 1px solid pink;
 
         .__determine{
@@ -73,7 +96,7 @@ span{
 
     &socials{
 
-        width: 50%;
+        width: 15rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -93,3 +116,4 @@ span{
 }
 
 @import 'everything';
+@import 'mobilescreen';
