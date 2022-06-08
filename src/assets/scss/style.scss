@@ -33,7 +33,9 @@ span{
     display: flex;
     height: 100%;
     justify-content: space-between;
-    // background: pink;
+
+    background: $every-default-bg;
+
 }
 
 .text__appealing{
@@ -43,13 +45,13 @@ span{
 
 
 .int__{
+    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     display: block;
+    height: 100vh;
     width: 40rem;
-    background: $intro-default-bg;
-
 }
 
 .in__{
@@ -67,16 +69,14 @@ span{
     width: 28rem;
     padding: 1rem;
     color: $default-color;
+    background: $intro-default-bg;
 
-    // border: 1px solid orange;
 
     &inside{
         width: 100%;
         display: grid;
         place-items: start;
         padding: 1rem ;
-
-        // border: 1px solid pink;
 
         .__determine{
             color: $secondary-color;
@@ -98,7 +98,6 @@ span{
         justify-content: space-between;
         padding: 1rem;
 
-        // border: 1px solid orange;
     
         .__icons{
             font-size: 1.5rem;

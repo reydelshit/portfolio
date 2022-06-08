@@ -40,10 +40,6 @@
   color: #DDD92A;
 }
 
-#light-mode .eve {
-  background: #fafffdd7;
-}
-
 #light-mode .eve * {
   color: #2D2A32;
 }
@@ -155,6 +151,7 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #364156;
 }
 
 .text__appealing {
@@ -173,8 +170,8 @@ span {
       -ms-flex-align: center;
           align-items: center;
   display: block;
+  height: 100vh;
   width: 40rem;
-  background: #2D2A32;
 }
 
 .in__ {
@@ -198,6 +195,7 @@ span {
   width: 28rem;
   padding: 1rem;
   color: #F9FFFD;
+  background: #2D2A32;
 }
 
 .in__inside {
