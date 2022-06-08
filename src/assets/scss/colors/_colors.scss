@@ -1,7 +1,24 @@
+// default bg 
+$intro-default-bg: #2D2A32;
+$every-default-bg: #364156;
+
+
+//default text color
+$default-color: #F9FFFD;
+
+// opposite bg 
+$every-opp-bg: #fafffdd7;
+$intro-opp-bg: hsl(263, 9%, 30%);
+
+$default-opp: #2D2A32;
+
+
+// light 
+// #FAFFFD
+
 // main dark mode background color 
 $main-dark-background: #364156;
 // $main-dark-background: #2D2A32;
-
 
 // main light mode background color  
 $main-light-background: #FFFAFF;
@@ -18,12 +35,8 @@ $primary-color: #DDD92A;
 $secondary-color: #EAE151;
 
 
-// default color 
-$default-color: #F9FFFD;
-
-
 // project card background color
-$project-background-dark: #35323afd;
+$project-background-dark: hsl(219, 23%, 35%);
 
-$project-background-light: hsl(264, 28%, 91%);
+$project-background-light: hsl(263, 9%, 30%);
 

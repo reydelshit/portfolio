@@ -4,6 +4,8 @@
     height: 100%;
     overflow-y: hidden;
 
+    background-color: $every-default-bg;
+
     .text__appealing{
         color: $primary-colorete;
         display: unset;
@@ -131,7 +133,7 @@ header{
     display: grid;
     padding: 1rem;
     width: 88%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 

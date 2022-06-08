@@ -129,4 +129,11 @@
 
 }
 
+@media screen and (max-width: 764px) {
+    .__item{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+
 

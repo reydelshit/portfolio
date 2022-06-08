@@ -24,24 +24,56 @@
   cursor: pointer;
 }
 
-#light-mode {
-  background: #FFFAFF;
+#light-mode .int__ {
+  background: #4b4653;
 }
 
-#light-mode span {
+#light-mode .int__ * {
+  color: #F9FFFD;
+}
+
+#light-mode .int__ span {
   color: #DDD92A;
 }
 
-#light-mode * {
-  color: orange;
+#light-mode .int__ .__icons :hover {
+  color: #DDD92A;
+}
+
+#light-mode .eve {
+  background: #fafffdd7;
+}
+
+#light-mode .eve * {
+  color: #2D2A32;
+}
+
+#light-mode .eve span {
+  color: #DDD92A;
+}
+
+#light-mode .eve .__icons :hover {
+  color: #DDD92A;
+}
+
+#light-mode .eve .__icon {
+  fill: #DDD92A;
+}
+
+#light-mode .eve .crd__ctx {
+  background: #4b4653;
+}
+
+#light-mode .eve .crd__ctx * {
+  color: #F9FFFD;
+}
+
+#light-mode .eve .crd__ctx span {
+  color: #DDD92A;
 }
 
 #light-mode a:hover {
   color: #DDD92A;
-}
-
-#dark-mode {
-  background-color: #364156;
 }
 
 ::-webkit-scrollbar {
@@ -123,7 +155,6 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #364156;
 }
 
 .text__appealing {
@@ -142,8 +173,8 @@ span {
       -ms-flex-align: center;
           align-items: center;
   display: block;
-  height: 100vh;
   width: 40rem;
+  background: #2D2A32;
 }
 
 .in__ {
@@ -166,7 +197,7 @@ span {
           align-items: center;
   width: 28rem;
   padding: 1rem;
-  background: #2D2A32;
+  color: #F9FFFD;
 }
 
 .in__inside {
@@ -214,6 +245,7 @@ span {
   width: 100%;
   height: 100%;
   overflow-y: hidden;
+  background-color: #364156;
 }
 
 .eve .text__appealing {
@@ -354,15 +386,15 @@ header .toggleButton:hover {
   display: grid;
   padding: 1rem;
   width: 88%;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
 .crd__ctx {
   padding: 0.8rem;
   border-radius: 5px;
-  background: #35323afd;
+  background: #45536e;
 }
 
 .crd__ctx h1 {
@@ -592,6 +624,13 @@ footer {
   }
   .bl__ct {
     padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .__item {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 /*# sourceMappingURL=style.css.map */

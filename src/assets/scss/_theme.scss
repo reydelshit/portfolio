@@ -1,20 +1,64 @@
 #light-mode{
-    background: $main-light-background;
 
-    span{
-        color: $primary-color;
+    .int__{
+        background: $intro-opp-bg;
+
+        *{
+            color: $default-color;
+        }
+        span{
+            color: $primary-color;
+        }
+
+        .__icons{
+            :hover{
+                color: $primary-color;
+            }
+        }
     }
+    .eve{
+        background: $every-opp-bg;
+
+        *{
+            color: $default-opp;
+        }
+        span{
+            color: $primary-color;
+        }
+
+        .__icons{
+            :hover{
+                color: $primary-color;
+            }
+        }
+
+        .__icon{
+            fill: $primary-color;
+        }
+
+        .crd__ctx{
+            background: $project-background-light;
+            *{
+                color: $default-color;
+            }
+
+            span{
+                color: $primary-color;
+            }
+        }
+    }
+
     
-    *{
-        color: orange;
-    }
+    // *{
+    //     color: orange;
+    // }
 
     a:hover{
        color: $primary-color;
     }
 }
 
-#dark-mode{
-    background-color: $main-dark-background;
+// #dark-mode{
+//     background-color: $main-dark-background;
 
-}
+// }
