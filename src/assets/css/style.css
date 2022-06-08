@@ -33,7 +33,7 @@
 }
 
 #light-mode * {
-  color: #2D2A32;
+  color: orange;
 }
 
 #light-mode a:hover {
@@ -144,7 +144,6 @@ span {
   display: block;
   height: 100vh;
   width: 40rem;
-  border: 1px solid yellow;
 }
 
 .in__ {
@@ -215,7 +214,6 @@ span {
   width: 100%;
   height: 100%;
   overflow-y: hidden;
-  border: 1px solid pink;
 }
 
 .eve .text__appealing {
@@ -231,7 +229,6 @@ span {
 header {
   width: 100%;
   height: 4rem;
-  border: 1px solid pink;
 }
 
 header a {
@@ -248,7 +245,7 @@ header .header__menu {
   display: none;
 }
 
-header button {
+header .toggleButton, header .toggleMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,11 +261,11 @@ header button {
   transition: ease-in 0.1s;
 }
 
-header button:active {
+header .toggleButton:active, header .toggleMenu:active {
   border: 2px solid #A1FF85;
 }
 
-header button:hover {
+header .toggleButton:hover, header .toggleMenu:hover {
   color: #A1FF85;
 }
 
@@ -284,13 +281,11 @@ header button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  border: 1px solid aqua;
 }
 
 .__abc {
   width: 100%;
   margin-top: 7rem;
-  border: 1px solid orange;
 }
 
 .__abc h1 {
@@ -480,6 +475,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
   }
   .int__ {
     width: 100%;
@@ -487,6 +483,18 @@ footer {
   .in__ {
     width: 100%;
     position: unset;
+    padding: 0;
+  }
+  .hd__default {
+    padding: 0.5rem;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+  header a {
+    margin-right: 0;
   }
   header .hd__links {
     display: none;
@@ -499,6 +507,26 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0.9;
+    overflow: hidden;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  header .sw__links a {
+    font-size: 1.5rem;
+  }
+  header button {
+    z-index: 2;
   }
   header .header__menu {
     display: block;
@@ -508,21 +536,42 @@ footer {
   }
   .ev {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
   .ab {
     width: 100%;
+  }
+  .__abc {
+    margin-top: 4rem;
     padding: 1rem;
   }
   .__abc .__stack .__item {
+    width: 100%;
     place-items: center;
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .__abc .__stack .item__container {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .pjx {
+    margin-top: 4rem;
+  }
+  .proyek__ct {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+  .proyek__ins {
+    place-items: start;
+    padding: 0;
+    width: 100%;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .bl__ct {
+    padding: 0 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

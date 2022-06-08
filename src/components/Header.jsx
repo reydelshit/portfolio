@@ -88,10 +88,10 @@ const Header = ({toggleTheme}) => {
               <a key={index} href={link} onClick={closeMenuAfterClicked}>{title}</a>
               )}
           </div>
-            <button className='toggleDarkMode' onClick={toggleThemeIcon}>
+            <button className='toggleButton' onClick={toggleThemeIcon}>
                 {toggle.themeDecider ? <BsSunFill /> : <BsSun />}
             </button>
-            <button onClick={toggleMenu} className='header__menu'>
+            <button onClick={toggleMenu} className='toggleMenu'>
               {toggle.menuDecider ? <RiCloseFill /> : <BiMenuAltRight/>}
           </button>
     </header>

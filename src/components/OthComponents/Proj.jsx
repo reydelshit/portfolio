@@ -6,7 +6,6 @@ const Proj = ({Projects}) => {
         <div className='proyek__ins'>
             {Projects.map((proj, index) => {
                 const { projectName, projectAbout, projectImage, projectTags } = proj
-
                 return (
                     <div className='crd__ctx' key={index}>
                         <h1>{projectName}</h1>
