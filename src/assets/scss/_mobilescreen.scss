@@ -1,4 +1,4 @@
-@media screen and (max-width: 1292px) {
+@media screen and (max-width: 1194px) {
     .main{
         flex-direction: column;
         position: relative;
@@ -19,7 +19,7 @@
     }
 
     header {
-        position: absolute;
+        position: fixed;
         top: 0;
         padding: 0;
 
@@ -38,7 +38,7 @@
             justify-content: center;
             opacity: 0.9;
             overflow: hidden;
-            background: black;
+            background: $main-light-color;
 
             position: fixed;
             top: 0;
@@ -51,45 +51,58 @@
             }
         }
 
-        button{
+        .toggleMenu{
             z-index: 2;
+            display: flex;
+            place-items: center;
+            text-align: center;
+            background: none;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            transition: ease-in 0.1s;
+        
+            &:active{
+                    border: 2px solid $primary-colorete;
+            }
+            &:hover{
+                    color: $primary-colorete;
+            }
         }
 
         .header__menu{
             display: block;
-            // font-size: 2rem;
         }
     }
 
     .eve{
         padding: 0;
-
     }
 
     .ev{
         width: 100%;
         padding: 0;
     }
-    
 
     .ab{
         width: 100%;
+        margin-top: 4rem;
     }
 
     .__abc{
-        margin-top: 4rem;
         padding: 1rem;
-        .__stack{
-            .__item{
-                width: 100%;
-                place-items: center;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
-    
-            .item__container{
-                width: fit-content;
-            }
-        }
+    }
+
+    .item__container{
+        width: fit-content;
+    }
+
+    .__item{
+        width: 100%;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .pjx{

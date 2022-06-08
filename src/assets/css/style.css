@@ -241,11 +241,11 @@ header a:hover {
   color: #A1FF85;
 }
 
-header .header__menu {
+header .toggleMenu {
   display: none;
 }
 
-header .toggleButton, header .toggleMenu {
+header .toggleButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,11 +261,11 @@ header .toggleButton, header .toggleMenu {
   transition: ease-in 0.1s;
 }
 
-header .toggleButton:active, header .toggleMenu:active {
+header .toggleButton:active {
   border: 2px solid #A1FF85;
 }
 
-header .toggleButton:hover, header .toggleMenu:hover {
+header .toggleButton:hover {
   color: #A1FF85;
 }
 
@@ -281,38 +281,28 @@ header .toggleButton:hover, header .toggleMenu:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  width: 100%;
+  margin-top: 7rem;
 }
 
 .__abc {
-  width: 100%;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .__abc h1 {
   margin-bottom: 2rem;
 }
 
-.__abc .__stack {
+.__stack {
   margin-top: 2rem;
   padding: 1rem 0;
 }
 
-.__abc .__stack h3 {
+.__stack h3 {
   text-align: start !important;
 }
 
-.__abc .__stack .__item {
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  place-items: end;
-  padding: 1rem;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.2rem;
-}
-
-.__abc .__stack .item__container {
+.item__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,8 +317,19 @@ header .toggleButton:hover, header .toggleMenu:hover {
   padding: 0.5rem;
 }
 
-.__abc .__stack .item__container .__icon {
+.item__container .__icon {
   fill: #A1FF85;
+}
+
+.__item {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  place-items: end;
+  padding: 1rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.2rem;
 }
 
 .pjx {
@@ -361,7 +362,7 @@ header .toggleButton:hover, header .toggleMenu:hover {
 .crd__ctx {
   padding: 0.8rem;
   border-radius: 5px;
-  background: #3d485e;
+  background: #35323afd;
 }
 
 .crd__ctx h1 {
@@ -469,7 +470,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 1292px) {
+@media screen and (max-width: 1194px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -489,7 +490,7 @@ footer {
     padding: 0.5rem;
   }
   header {
-    position: absolute;
+    position: fixed;
     top: 0;
     padding: 0;
   }
@@ -515,7 +516,7 @@ footer {
             justify-content: center;
     opacity: 0.9;
     overflow: hidden;
-    background: black;
+    background: #2D2A32;
     position: fixed;
     top: 0;
     left: 0;
@@ -525,8 +526,27 @@ footer {
   header .sw__links a {
     font-size: 1.5rem;
   }
-  header button {
+  header .toggleMenu {
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-items: center;
+    text-align: center;
+    background: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: ease-in 0.1s;
+    transition: ease-in 0.1s;
+  }
+  header .toggleMenu:active {
+    border: 2px solid #A1FF85;
+  }
+  header .toggleMenu:hover {
+    color: #A1FF85;
   }
   header .header__menu {
     display: block;
@@ -540,21 +560,21 @@ footer {
   }
   .ab {
     width: 100%;
+    margin-top: 4rem;
   }
   .__abc {
-    margin-top: 4rem;
     padding: 1rem;
   }
-  .__abc .__stack .__item {
+  .item__container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .__item {
     width: 100%;
     place-items: center;
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .__abc .__stack .item__container {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .pjx {
     margin-top: 4rem;

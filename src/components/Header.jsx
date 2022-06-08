@@ -2,17 +2,13 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 import { BsSun, BsSunFill } from 'react-icons/bs'
-import { BiMenuAltRight } from 'react-icons/bi'
-import { RiCloseFill } from 'react-icons/ri'
+// import { BiMenuAltRight } from 'react-icons/bi'
+import { RiCloseFill, RiMenu3Line } from 'react-icons/ri'
 
 import { Links } from './Details/ProfileDetails'
 
 
 const Header = ({toggleTheme}) => {
-
-    // const [darkMode, setDarkMode] = useState(false)
-    // const [menu, setMenu] = useState(false)
-    // const [menuOpen, setMenuOpen] = useState(false)
 
     const [moveSide, setMoveSide] = useState(false)
     const [windowSize, setWindowSize] = useState({
@@ -44,7 +40,7 @@ const Header = ({toggleTheme}) => {
         window.addEventListener('scroll', handleScroll)
       }
 
-      if(window.innerWidth < 1300) {
+      if(window.innerWidth < 1194) {
         setMoveSide(false)
       }
 
@@ -92,7 +88,7 @@ const Header = ({toggleTheme}) => {
                 {toggle.themeDecider ? <BsSunFill /> : <BsSun />}
             </button>
             <button onClick={toggleMenu} className='toggleMenu'>
-              {toggle.menuDecider ? <RiCloseFill /> : <BiMenuAltRight/>}
+              {toggle.menuDecider ? <RiCloseFill /> : <RiMenu3Line/>}
           </button>
     </header>
   )
