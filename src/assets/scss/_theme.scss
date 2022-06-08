@@ -62,7 +62,20 @@
     }
 }
 
-// #dark-mode{
-//     background-color: $main-dark-background;
+#dark-mode{
+    
+    .ctx__btn{
+        @extend %btn;
+        
+        font-size: 0.8rem;
 
-// }
+        border-color: $primary-colorete;
+
+        box-shadow: inset 0 0 0 0 $primary-colorete;
+
+        &:hover{
+            box-shadow: inset 10rem 0 0 0 $primary-colorete;
+        }
+    }
+
+}

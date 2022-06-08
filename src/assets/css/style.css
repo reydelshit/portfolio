@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
-.in__inside .__btn, .contact .ctx__btn {
+#dark-mode .ctx__btn, .in__inside .__btn, .contact .ctx__btn {
   border: 3px solid #DDD92A;
   border-radius: 4px;
   padding: 10px;
@@ -17,7 +17,7 @@
   margin: 0.5rem 0;
 }
 
-.in__inside .__btn:hover, .contact .ctx__btn:hover {
+#dark-mode .ctx__btn:hover, .in__inside .__btn:hover, .contact .ctx__btn:hover {
   color: black;
   -webkit-box-shadow: inset 10rem 0 0 0 #DDD92A;
           box-shadow: inset 10rem 0 0 0 #DDD92A;
@@ -80,6 +80,18 @@
   color: #DDD92A;
 }
 
+#dark-mode .ctx__btn {
+  font-size: 0.8rem;
+  border-color: #A1FF85;
+  -webkit-box-shadow: inset 0 0 0 0 #A1FF85;
+          box-shadow: inset 0 0 0 0 #A1FF85;
+}
+
+#dark-mode .ctx__btn:hover {
+  -webkit-box-shadow: inset 10rem 0 0 0 #A1FF85;
+          box-shadow: inset 10rem 0 0 0 #A1FF85;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -112,6 +124,10 @@
 }
 
 .hd__side {
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 8rem;
   height: 100%;
   position: fixed;
@@ -132,6 +148,83 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.sp__ctx {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 400px;
+}
+
+.spinner {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  -webkit-animation: spinner-xza56z 2s infinite linear;
+          animation: spinner-xza56z 2s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #DDD92A;
+  border-radius: 50%;
+  -webkit-animation: spinner-lqsq3g 1.25s infinite ease;
+          animation: spinner-lqsq3g 1.25s infinite ease;
+}
+
+.spinner::before {
+  height: 75%;
+  width: 75%;
+  -webkit-transform-origin: -40% -80%;
+          transform-origin: -40% -80%;
+}
+
+.spinner::after {
+  height: 50%;
+  width: 50%;
+  -webkit-transform-origin: 40% 80%;
+          transform-origin: 40% 80%;
+}
+
+@-webkit-keyframes spinner-xza56z {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-xza56z {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinner-lqsq3g {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes spinner-lqsq3g {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 * {
@@ -160,6 +253,21 @@ span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #364156;
+}
+
+.mn__preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2D2A32;
+  height: 100vh;
+  width: 100%;
 }
 
 .text__appealing {
@@ -207,6 +315,10 @@ span {
 }
 
 .in__inside {
+  -webkit-animation: bounceInLeft;
+          animation: bounceInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -243,6 +355,8 @@ span {
 }
 
 .in__socials .__icons :hover {
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s;
   color: #DDD92A;
 }
 
@@ -444,6 +558,7 @@ header .toggleButton:hover {
 }
 
 .blogs h1 {
+  text-align: start !important;
   margin-bottom: 2rem;
 }
 

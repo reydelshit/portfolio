@@ -10,7 +10,7 @@
 @import 'theme';
 @import 'scrollbar';
 @import 'movesideHeader';
-
+@import 'preloader';
 
 *{
     margin: 0;
@@ -38,6 +38,15 @@ span{
 
 }
 
+.mn__preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $intro-default-bg;
+    height: 100vh;
+    width: 100%;
+}
+
 .text__appealing{
     color: $primary-color;
     display: unset;
@@ -55,7 +64,6 @@ span{
 }
 
 .in__{
-
     position: fixed;
     left: 0;
     top: 0;
@@ -69,11 +77,14 @@ span{
     width: 28rem;
     padding: 1rem;
     color: $default-color;
-    
+
     background: $intro-default-bg;
 
 
     &inside{
+        animation: bounceInLeft;
+        animation-duration: 1s;
+        
         width: 100%;
         display: grid;
         place-items: start;
@@ -105,6 +116,7 @@ span{
             cursor: pointer;
 
             :hover{
+                transition: all ease-in 0.1s;
                 color: $primary-color;
             }
         }

@@ -138,6 +138,7 @@ header{
 }
 
 .crd__ctx{
+
     padding: 0.8rem;
     border-radius: 5px;
     background: $project-background-dark;
@@ -187,9 +188,11 @@ header{
     margin-top: 5rem;
 
     h1{
+        text-align: start !important;
         margin-bottom: 2rem;
     }
 }
+
 
 .bl__ct{
     width: 100%;
@@ -238,6 +241,7 @@ header{
 
     .ctx__btn{
         @extend %btn;
+        
         font-size: 0.8rem;
     }
 }

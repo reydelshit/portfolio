@@ -10,6 +10,9 @@
 
 .hd__side{
 
+    animation: bounceIn;
+    animation-duration: 1s;
+    
     width: 8rem;
     height: 100%;
     position: fixed;

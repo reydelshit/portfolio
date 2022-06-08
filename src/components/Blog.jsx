@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import BlogPosts from './OthComponents/BlogPosts';
+import Loader from './utils/Loader';
 
 import Title from './utils/Title';
 
@@ -55,7 +56,7 @@ const Blog = () => {
   return (
     <div className='blogs' id='blogs'>
         <Title title='Blog'/>
-        <BlogPosts blogData={blogData}/>
+          {blogData.length === 0 ? <Loader className="sp__ctx" /> : <BlogPosts blogData={blogData} />}
     </div>
   )
 }
