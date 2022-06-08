@@ -1,41 +1,7 @@
-
-.hd__default{
-    display: flex;
-    padding: 0 2rem;
-    align-items: center;
-    justify-content: end;
-
-}
-
-.hd__side{
-
-    // animation: bounceIn;
-    // animation-duration: 1s;
-
-	-webkit-animation: bounce-in-right 1s both;
-	        animation: bounce-in-right 1s both;
-    
-    width: 8rem;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding: 4rem 1rem;
-    
-    a{
-        margin-bottom: 1rem;
-    }
-
-    .hd__links{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@-webkit-keyframes bounce-in-right {
+@-webkit-keyframes bounce-in-left {
     0% {
-      -webkit-transform: translateX(600px);
-              transform: translateX(600px);
+      -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
       opacity: 0;
@@ -48,8 +14,8 @@
       opacity: 1;
     }
     55% {
-      -webkit-transform: translateX(68px);
-              transform: translateX(68px);
+      -webkit-transform: translateX(-68px);
+              transform: translateX(-68px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -60,8 +26,8 @@
               animation-timing-function: ease-out;
     }
     81% {
-      -webkit-transform: translateX(32px);
-              transform: translateX(32px);
+      -webkit-transform: translateX(-28px);
+              transform: translateX(-28px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -72,8 +38,8 @@
               animation-timing-function: ease-out;
     }
     95% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -84,10 +50,10 @@
               animation-timing-function: ease-out;
     }
   }
-  @keyframes bounce-in-right {
+  @keyframes bounce-in-left {
     0% {
-      -webkit-transform: translateX(600px);
-              transform: translateX(600px);
+      -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
       opacity: 0;
@@ -100,8 +66,8 @@
       opacity: 1;
     }
     55% {
-      -webkit-transform: translateX(68px);
-              transform: translateX(68px);
+      -webkit-transform: translateX(-68px);
+              transform: translateX(-68px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -112,8 +78,8 @@
               animation-timing-function: ease-out;
     }
     81% {
-      -webkit-transform: translateX(32px);
-              transform: translateX(32px);
+      -webkit-transform: translateX(-28px);
+              transform: translateX(-28px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -124,8 +90,8 @@
               animation-timing-function: ease-out;
     }
     95% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
       -webkit-animation-timing-function: ease-in;
               animation-timing-function: ease-in;
     }
@@ -136,4 +102,3 @@
               animation-timing-function: ease-out;
     }
   }
-  

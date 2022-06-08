@@ -80,8 +80,10 @@ span{
 
 
     &inside{
-        animation: bounceInLeft;
-        animation-duration: 1s;
+        -webkit-animation: bounce-in-left 1.1s both;
+        animation: bounce-in-left 1.1s both;
+
+        @import 'animation';
         
         width: 100%;
         display: grid;
@@ -94,6 +96,7 @@ span{
         .__btn{
             @extend %btn;
         }
+          
     }
 
     &inside > *{
