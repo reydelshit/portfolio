@@ -22,6 +22,16 @@
         }
     }
     .eve{
+        
+        .sw__links{
+            background-color: $intro-opp-bg;
+
+            a{
+                color: $default-color;
+
+            }
+        }
+
         background-color: $every-opp-bg;
         *{
             color: $default-opp;
@@ -50,10 +60,17 @@
                 color: $primary-color;
             }
         }
-    }
 
-    a:hover{
-       color: $primary-color;
+        a:hover{
+            color: $primary-color;
+         }
+
+        
+         .toggleMenu, .toggleButton{
+            *{
+                color: $primary-color;
+            }
+         }
     }
 }
 

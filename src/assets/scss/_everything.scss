@@ -51,6 +51,10 @@ header{
         border: none;
         transition: ease-in 0.1s;
 
+        *{
+            color: $primary-colorete;
+        }
+
         &:active{
             border: 2px solid $primary-colorete;
         }

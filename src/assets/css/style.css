@@ -50,6 +50,14 @@
   background-color: #fafffdd7;
 }
 
+#light-mode .eve .sw__links {
+  background-color: #4b4653;
+}
+
+#light-mode .eve .sw__links a {
+  color: #F9FFFD;
+}
+
 #light-mode .eve * {
   color: #2D2A32;
 }
@@ -78,7 +86,11 @@
   color: #DDD92A;
 }
 
-#light-mode a:hover {
+#light-mode .eve a:hover {
+  color: #DDD92A;
+}
+
+#light-mode .eve .toggleMenu *, #light-mode .eve .toggleButton * {
   color: #DDD92A;
 }
 
@@ -415,6 +427,10 @@ header .toggleButton {
   transition: ease-in 0.1s;
 }
 
+header .toggleButton * {
+  color: #A1FF85;
+}
+
 header .toggleButton:active {
   border: 2px solid #A1FF85;
 }
@@ -707,6 +723,9 @@ footer {
     border: none;
     -webkit-transition: ease-in 0.1s;
     transition: ease-in 0.1s;
+  }
+  header .toggleMenu * {
+    color: #A1FF85;
   }
   header .toggleMenu:active {
     border: 2px solid #A1FF85;

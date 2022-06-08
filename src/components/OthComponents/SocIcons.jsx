@@ -8,7 +8,7 @@ const SocIcons = () => {
         {SocialIcons.map(icon => {
             const { id, name, Icon, link } = icon;
             return (
-                <a href={link} target="_blank" rel='noreferrer'><Icon className='__icons' key={id} name={name} /> </a> 
+                <a key={id} href={link} target="_blank" rel='noreferrer'><Icon className='__icons' key={id} name={name} /> </a> 
             )
         })}
     </div>

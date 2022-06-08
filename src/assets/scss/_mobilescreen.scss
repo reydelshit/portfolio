@@ -38,7 +38,7 @@
             justify-content: center;
             opacity: 0.9;
             overflow: hidden;
-            background: $main-light-color;
+            background: $intro-default-bg;
 
             position: fixed;
             top: 0;
@@ -63,6 +63,10 @@
             border-radius: 5px;
             border: none;
             transition: ease-in 0.1s;
+            
+            *{
+                color: $primary-colorete;
+            }
         
             &:active{
                     border: 2px solid $primary-colorete;
