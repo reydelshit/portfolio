@@ -1,8 +1,8 @@
 #light-mode{
 
-    .int__{
-        background: $intro-opp-bg;
+    background: $every-opp-bg;
 
+    .int__{
         *{
             color: $default-color;
         }
@@ -15,8 +15,14 @@
                 color: $primary-color;
             }
         }
+
+        .in__{
+            background: $intro-opp-bg;
+
+        }
     }
     .eve{
+        background-color: $every-opp-bg;
         *{
             color: $default-opp;
         }

@@ -24,8 +24,8 @@
   cursor: pointer;
 }
 
-#light-mode .int__ {
-  background: #4b4653;
+#light-mode {
+  background: #fafffdd7;
 }
 
 #light-mode .int__ * {
@@ -38,6 +38,14 @@
 
 #light-mode .int__ .__icons :hover {
   color: #DDD92A;
+}
+
+#light-mode .int__ .in__ {
+  background: #4b4653;
+}
+
+#light-mode .eve {
+  background-color: #fafffdd7;
 }
 
 #light-mode .eve * {
