@@ -120,6 +120,16 @@ header{
         margin-bottom: 2rem;
     }
 
+    a{
+        display: grid;
+        place-items: end;
+        text-align: end;
+        text-decoration: none;
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        color: $primary-colorete;
+    }
+
 }
 
 .proyek__ct{
@@ -168,7 +178,6 @@ header{
             width: 100%;
             object-fit: contain;
         }
-
     }
 
     .__tags span{
@@ -210,10 +219,8 @@ header{
 
         &:hover{
             color: $primary-colorete;
-
         }
     }
-
     p{
         font-size: 0.8rem;
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Stack } from './Details/ProfileDetails';
+import { Stack } from './Config/Details';
 import TechStackContainer from './OthComponents/TechStackContainer';
 
 const TechStack = () => {

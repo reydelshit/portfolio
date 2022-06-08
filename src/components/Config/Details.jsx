@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { GithubImage } from '../../assets/Images/Images'
+import { GithubImage, CovidLiveInfo, Gyip, TipCalc, DanceLife } from '../../assets/Images/ExportImages'
 import { 
     SiReact,
     SiVuedotjs,
@@ -30,27 +30,27 @@ export const Projects = [
             projectTags: ['React', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript', 'Github API'],
         },
         {
-            projectName: 'Github User Search',
+            projectName: 'Covid 19 Live Info',
             projectAbout: 'A simple search engine for Github users. Search by username, name, or email.',
-            projectImage: GithubImage,
-            projectTags: ['React', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript', 'Github API'],
+            projectImage: CovidLiveInfo,
+            projectTags: ['React', 'CSS', 'HTML', 'JavaScript', 'API'],
         },
         {
-            projectName: 'Github User Search',
-            projectAbout: 'A simple search engine for Github users. Search by username, name, or email.',
-            projectImage: GithubImage,
-            projectTags: ['React', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript', 'Github API'],
+            projectName: 'Get yo IP',
+            projectAbout: 'a website that can get your ip address which also stands for got yo ip.',
+            projectImage: Gyip,
+            projectTags: ['React', 'CSS', 'HTML', 'JavaScript'],
         },
         {
-            projectName: 'Github User Search',
-            projectAbout: 'A simple search engine for Github users. Search by username, name, or email.',
-            projectImage: GithubImage,
-            projectTags: ['React', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript', 'Github API'],
+            projectName: 'Tip Calculator',
+            projectAbout: 'A tip calculator that can calculate various percentages and translate them to real money for ya to make things much easier.',
+            projectImage: TipCalc,
+            projectTags: ['CSS', 'HTML', 'JavaScript'],
         },{
             projectName: 'Github User Search',
-            projectAbout: 'A simple search engine for Github users. Search by username, name, or email.',
-            projectImage: GithubImage,
-            projectTags: ['React', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript', 'Github API'],
+            projectAbout: 'a static landing page website made with HTML and CSS and also my final project for the first semester on web development.',
+            projectImage: DanceLife,
+            projectTags: ['CSS', 'HTML'],
         }
 ]
 
@@ -111,21 +111,25 @@ export const Stack = [
         id: 'github',
         name: 'Github',
         Icon: SiGithub,
+        link: 'https://github.com/reydelshit'
       },
       {
         id: 'linkedin',
         name: 'Linkedin',
         Icon: SiLinkedin,
+        link: 'https://www.linkedin.com/in/reydelocon/'
       },
       {
         id: 'instagram',
         name: 'Instagram',
         Icon: SiInstagram,
+        link: 'https://www.instagram.com/reydelshit/'
       },
       {
         id: 'twitter',
         name: 'Twitter',
         Icon: SiTwitter,
+        link: 'https://twitter.com/reydelsht'
       }
   ]
 

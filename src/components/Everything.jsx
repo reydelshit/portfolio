@@ -6,7 +6,6 @@ import Proyekto from './Proyekto'
 import Blog from './Blog'
 import Contact from './Contact'
 import Footer from './Footer'
-// import { SocialIcons } from './Details/ProfileDetails'
 
 const Everything = ({toggleTheme}) => {
   return (

@@ -39,8 +39,7 @@ const Blog = () => {
                 const res = await fetchData.json();
                 
                 setBlogData(res.data.user.publication.posts)
-                
-                // console.log(res)
+
             }
             
             catch(err){

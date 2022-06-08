@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div className='contact' id='contact'>
         <h1>GET IN TOUCH</h1>
-        <a href="mailto: abc@example.com" className='em' onClick={copyText}>{email}</a>
+        <a href={`mailto: ${email}`} className='em' onClick={copyText}>{email}</a>
         <Button className='ctx__btn' name='Send Message'/>
         <SocIcons />
     </div>

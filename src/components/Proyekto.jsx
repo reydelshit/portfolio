@@ -1,7 +1,7 @@
 import React from 'react'
 import Proj from './OthComponents/Proj';
 
-import { Projects } from './Details/ProfileDetails';
+import { Projects } from './Config/Details';
 import Title from './utils/Title';
 
 
@@ -10,6 +10,7 @@ const Proyekto = () => {
     <div className='pjx' id='projects'>
         <Title title='Projects'/>
         <Proj Projects={Projects} />
+        <a href='https://github.com/reydelshit'>See more of my projects</a>
     </div>
   )
 }

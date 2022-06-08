@@ -1,11 +1,14 @@
 import React from 'react'
 
 const Button = (props) => {
+  
+    const email = 'reydel321@gmail.com'
 
     const buttonName = props.name
     const buttonClass = props.className
+    
   return (
-    <button className={buttonClass}>{buttonName}</button>
+    <a className={buttonClass} href={`mailto: ${email}`}>{buttonName}</a>
   )
 }
 

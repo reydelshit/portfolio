@@ -6,7 +6,6 @@
 
 
 @import 'button';
-@import 'global';
 @import 'theme';
 @import 'scrollbar';
 @import 'movesideHeader';
@@ -54,7 +53,6 @@ span{
 
 
 .int__{
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

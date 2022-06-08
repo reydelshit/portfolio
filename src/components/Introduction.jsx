@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Details } from './Details/ProfileDetails'
+import { Details } from './Config/Details'
 
 import Text from './utils/Text'
 import Button from './utils/Button'
@@ -20,7 +20,7 @@ const Introduction = () => {
                     watching <Text text="anime " />  
                     and reading <Text text="books" />.
                 </p>
-                <Button name="Hire me" className="__btn"/>
+                <Button name="Get in touch!" className="__btn"/>
                 <SocIcons/>
             </div>
         </div>

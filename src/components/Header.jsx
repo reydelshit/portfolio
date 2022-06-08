@@ -2,10 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 import { BsSun, BsSunFill } from 'react-icons/bs'
-// import { BiMenuAltRight } from 'react-icons/bi'
 import { RiCloseFill, RiMenu3Line } from 'react-icons/ri'
 
-import { Links } from './Details/ProfileDetails'
+import { Links } from './Config/Details'
 
 
 const Header = ({toggleTheme}) => {
@@ -59,20 +58,17 @@ const Header = ({toggleTheme}) => {
         themeDecider: toggle.themeDecider ? false : true,
       })
       toggleTheme()
-      // console.log(toggle.themeDecider)
     }
     const toggleMenu = () => {
       setToggle({
         menuDecider: toggle.menuDecider ? false : true,
       })
-      // console.log(toggle.menuDecider)
     }
 
     const closeMenuAfterClicked = () => {
       setToggle({
         closeDecider: toggle.closeDecider ? false : true,
       })
-      // console.log(toggle.closeDecider)
     }
 
 

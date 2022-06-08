@@ -1,7 +1,7 @@
 %btn{
     border: 3px solid $primary-color;
     border-radius: 4px;
-
+    text-align: center;
     padding: 10px;
     width: 10rem;
     height: 3rem;
@@ -15,6 +15,8 @@
     transition: ease-in 0.2s;
     margin: 0.5rem 0;
 
+    text-decoration: none;
+
 }
 %btn:hover {
     color: black;
@@ -22,26 +24,4 @@
     cursor: pointer;
 }
 
-
-// .back__top{
-
-//     display: block;
-//     position: fixed;
-//     bottom: 2rem;
-//     right: 2rem;
-//     cursor: pointer;
-//     background: none;
-//     padding: 1rem;
-//     border: none;
-//     font-size: 2.5rem;
-
-//     transition: ease-in 0.2s;
-
-// }
-
-// @media screen and (max-width: 768px){
-//     .back__top{
-//         right: 0;
-//     }
-// }
 
