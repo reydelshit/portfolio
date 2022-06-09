@@ -16,14 +16,11 @@ const Header = ({toggleTheme}) => {
 
     const [toggle, setToggle] = useState({
       menuDecider: false,
-      themeDecider: false,
+      // themeDecider: false,
       closeDecider: false,
     })
-
-    // set the themedecider to local storage 
     
     useEffect(() => {
-
       const handleResize = () => {
         setWindowSize({
           width: window.innerWidth,
@@ -53,13 +50,9 @@ const Header = ({toggleTheme}) => {
 
     }, [windowSize]); 
 
-
     const toggleThemeIcon = () => {
-      setToggle({
-        themeDecider: toggle.themeDecider ? false : true,
-      })
+      // setToggle({themeDecider: toggle.themeDecider ? false : true})
       toggleTheme()
-      // localStorage.setItem('theme', toggle.themeDecider ? 'dark' : 'light')
     }
     const toggleMenu = () => {
       setToggle({
@@ -83,7 +76,7 @@ const Header = ({toggleTheme}) => {
               )}
           </div>
             <button className='toggleButton' onClick={toggleThemeIcon}>
-                {toggle.themeDecider ? <BsSunFill /> : <BsSun />}
+                {localStorage.getItem('theme') === 'dark-mode' ? <BsSunFill /> : <BsSun />}
             </button>
             <button onClick={toggleMenu} className='toggleMenu'>
               {toggle.menuDecider ? <RiCloseFill /> : <RiMenu3Line/>}
