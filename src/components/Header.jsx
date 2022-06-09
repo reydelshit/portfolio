@@ -20,6 +20,7 @@ const Header = ({toggleTheme}) => {
       closeDecider: false,
     })
 
+    // set the themedecider to local storage 
     
     useEffect(() => {
 
@@ -58,6 +59,7 @@ const Header = ({toggleTheme}) => {
         themeDecider: toggle.themeDecider ? false : true,
       })
       toggleTheme()
+      // localStorage.setItem('theme', toggle.themeDecider ? 'dark' : 'light')
     }
     const toggleMenu = () => {
       setToggle({
