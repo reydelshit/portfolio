@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, createContext, useEffect } from 'react'
 import './index.css'
-import 'animate.css';
 
 import Introduction from './components/Introduction'
 import Everything from './components/Everything'
