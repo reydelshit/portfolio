@@ -1,10 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-
-import { BsSun } from 'react-icons/bs'
-import { RiCloseFill, RiMenu3Line, RiMoonClearLine } from 'react-icons/ri'
+import { RiCloseFill, RiMenu3Line } from 'react-icons/ri'
 
 import { Links } from './Config/Details'
+import ThemeToggle from './OthComponents/ThemeToggle'
 
 
 const Header = ({toggleTheme}) => {
@@ -16,11 +15,8 @@ const Header = ({toggleTheme}) => {
 
     const [toggle, setToggle] = useState({
       menuDecider: false,
-      themeDecider: true,
       closeDecider: false,
     })
-    
-    // localStorage.getItem('theme') === 'dark-mode'
 
     useEffect(() => {
       const handleResize = () => {
@@ -52,13 +48,7 @@ const Header = ({toggleTheme}) => {
 
     }, [windowSize]); 
 
-    const toggleThemeIcon = () => {
-      
-      setToggle({
-        themeDecider: toggle.themeDecider ? false : true
-      })
-      toggleTheme()
-    }
+
     const toggleMenu = () => {
       setToggle({
         menuDecider: toggle.menuDecider ? false : true,
@@ -72,6 +62,7 @@ const Header = ({toggleTheme}) => {
     }
 
 
+
   return (
     
     <header className={moveSide ? 'hd__side' : 'hd__default'}>
@@ -80,9 +71,7 @@ const Header = ({toggleTheme}) => {
               <a key={index} href={link} onClick={closeMenuAfterClicked}>{title}</a>
               )}
           </div>
-            <button className='toggleButton' onClick={toggleThemeIcon}>
-                {toggle.themeDecider ? <BsSun /> : <RiMoonClearLine />}
-            </button>
+          <ThemeToggle toggleTheme={toggleTheme} />
             <button onClick={toggleMenu} className='toggleMenu'>
               {toggle.menuDecider ? <RiCloseFill /> : <RiMenu3Line/>}
           </button>
