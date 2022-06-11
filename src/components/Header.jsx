@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-import { BsSun, BsSunFill } from 'react-icons/bs'
-import { RiCloseFill, RiMenu3Line } from 'react-icons/ri'
+import { BsSun } from 'react-icons/bs'
+import { RiCloseFill, RiMenu3Line, RiMoonClearLine } from 'react-icons/ri'
 
 import { Links } from './Config/Details'
 
@@ -81,7 +81,7 @@ const Header = ({toggleTheme}) => {
               )}
           </div>
             <button className='toggleButton' onClick={toggleThemeIcon}>
-                {toggle.themeDecider ? <BsSun /> : <BsSunFill />}
+                {toggle.themeDecider ? <BsSun /> : <RiMoonClearLine />}
             </button>
             <button onClick={toggleMenu} className='toggleMenu'>
               {toggle.menuDecider ? <RiCloseFill /> : <RiMenu3Line/>}
