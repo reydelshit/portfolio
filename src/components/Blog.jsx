@@ -34,12 +34,9 @@ const Blog = () => {
                         'Content-type': 'application/json',
                     },
                     body: JSON.stringify({ query }),
-                })
-    
+                }) 
                 const res = await fetchData.json();
-                
                 setBlogData(res.data.user.publication.posts)
-
             }
             
             catch(err){

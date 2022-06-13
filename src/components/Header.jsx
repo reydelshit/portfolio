@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { RiCloseFill, RiMenu3Line } from 'react-icons/ri'
 
 import { Links } from './Config/Details'
 import ThemeToggle from './OthComponents/ThemeToggle'
+import MenuToggle from './OthComponents/MenuToggle'
 
 
 const Header = ({toggleTheme}) => {
@@ -72,9 +72,7 @@ const Header = ({toggleTheme}) => {
               )}
           </div>
           <ThemeToggle toggleTheme={toggleTheme} />
-            <button onClick={toggleMenu} className='toggleMenu'>
-              {toggle.menuDecider ? <RiCloseFill /> : <RiMenu3Line/>}
-          </button>
+          <MenuToggle toggleMenu={toggleMenu} toggle={toggle}/>
     </header>
   )
 }

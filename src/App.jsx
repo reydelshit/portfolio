@@ -46,7 +46,6 @@ const App = () => {
                 <Everything toggleTheme={toggleTheme}/>
             </div>
             }
-
     </ThemeContext.Provider>
   )
 }
