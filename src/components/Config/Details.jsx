@@ -47,7 +47,7 @@ export const Projects = [
             projectImage: TipCalc,
             projectTags: ['CSS', 'HTML', 'JavaScript'],
         },{
-            projectName: 'Github User Search',
+            projectName: 'Dance is Life',
             projectAbout: 'a static landing page website made with HTML and CSS and also my final project for the first semester on web development.',
             projectImage: DanceLife,
             projectTags: ['CSS', 'HTML'],
