@@ -80,10 +80,8 @@ span{
 
 
     &inside{
-        -webkit-animation: bounce-in-left 1.1s both;
-        animation: bounce-in-left 1.1s both;
 
-        @import 'animation';
+        // @import 'animation';
         
         width: 100%;
         display: grid;
