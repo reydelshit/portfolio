@@ -23,7 +23,7 @@ const App = () => {
       localStorage.setItem('theme', themes)
       setTheme(themes)
 
-      console.log(themes, 'savetheme');
+      // console.log(themes, 'savetheme');
 
     }
 
