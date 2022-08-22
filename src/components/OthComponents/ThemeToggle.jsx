@@ -13,7 +13,13 @@ const ThemeToggle = ({toggleTheme}) => {
       }
 
       const toggleThemeIcon = () => {
-        setIconLocalStorage((currentIcon => currentIcon === 'true' ? saveIcon('false') : saveIcon('true')))
+
+        const localHolder = localStorage.getItem('toggleIcon')
+        setIconLocalStorage((localHolder === 'true' ? saveIcon('false') : saveIcon('true')))
+
+        // const localHolder = localStorage.getItem('theme')
+        // setTheme((localHolder === 'dark-mode' ? saveTheme('light-mode') : saveTheme('dark-mode')))
+
         toggleTheme()
       }
       
@@ -26,7 +32,7 @@ const ThemeToggle = ({toggleTheme}) => {
       } else {
         setIconLocalStorage('false')
       }
-    }, [])
+    }, [iconLocalStorage])
 
 
   return (

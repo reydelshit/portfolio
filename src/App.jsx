@@ -11,21 +11,39 @@ export const ThemeContext = createContext(null)
 
 const App = () => {
 
-    const [theme, setTheme] = useState("dark-mode")
+
+    const [theme, setTheme] = useState('dark-mode')
     const [preloader, setPreloader] = useState(true)
 
+
+    // output is current item in local storage 
+
     const saveTheme = (themes) => {
+
       localStorage.setItem('theme', themes)
       setTheme(themes)
+
+      console.log(themes, 'savetheme');
+
     }
 
+
+    // output is before inialization/ opposite of currentItem in localStorage
+    
     const toggleTheme = () => {
-      setTheme((currentTheme => currentTheme === 'dark-mode' ? saveTheme('light-mode') : saveTheme('dark-mode')))
+
+      const localHolder = localStorage.getItem('theme')
+      setTheme((localHolder === 'dark-mode' ? saveTheme('light-mode') : saveTheme('dark-mode')))
+
     }
+
 
   
     useEffect(() => {
       const localHolder = localStorage.getItem('theme')
+
+      // console.log(localHolder, 'useeffect')
+
       if(localHolder) {
         setTheme(localHolder)
       } else {
@@ -35,7 +53,7 @@ const App = () => {
       setTimeout(() => {
         setPreloader(false)
       }, 2000)
-    }, [])
+    }, [theme])
 
     
   return (
@@ -50,4 +68,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
