@@ -4,7 +4,7 @@ import Button from './utils/Button'
 
 const Contact = () => {
 
-    const email = 'reydel321@gmail.com'
+    const email = 'reydelocon.dev@gmail.com'
 
     const copyText = () => {
         navigator.clipboard.writeText(email)
